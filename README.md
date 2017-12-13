@@ -1,26 +1,11 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+## coupon-user
+ionic3+angular4完成kupang商家版app1.0版本
 
-## How to use this template
+## 使用说明
+1.第一次运行时,打开命令行，进入源代码的根目录,执行ionic serve,因为没有node_modules文件，命令行提示：‘? Looks like a fresh checkout! No ./node_modules directory found. Would you like to install project dependencies? (Y/n) ’，选择Y，自动执行npm install,安装依赖。安装完成之后，自动跳转页面。
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+2.下次只需要执行下面的命令,浏览器项目启动成功:
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+ionic serve
 
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myTabs tabs
-```
-
-Then, to run it, cd into `myTabs` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
 
