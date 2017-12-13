@@ -1,0 +1,58 @@
+page-home {
+  .homeToolBar{
+    .homeHeaderBox{padding:5px 20px 5px 30px;
+      img{width:40px;height:40px;margin-right:20px;}
+      .userInfor{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;
+        p{margin:0px;}
+        .name{color:#fff;font-size:1.8rem;font-weight: bold;}
+        .phonenumber{font-size:1.5rem;color:#b4b4b4;}
+      }
+    }
+
+  }
+  .homePageContent{padding:25px 0;}
+  .cardPackpageBox{position: relative;
+    .cardBillBox{font-size:1.4rem;color:#272727;position: absolute;right:20px;top:0px;bottom:0px;margin:auto 0;height:30px;line-height: 40px;border-bottom: 1px solid #272727;}
+  }
+  .cardPackpageBox img{width:45%;height:auto;}
+  .paymentScanBox{margin-top:40px;display: -webkit-box;display: -webkit-flex;display: flex;-webkit-box-align: center;-webkit-align-items: center;align-items: center;}
+  .paymentScanBox .imgBox{width:50%;height:auto;-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;text-align: center;}
+  .paymentScanBox .imgBox:nth-child(1) img{border-right:1px solid #dadbdb;}
+  .paymentScanBox .imgBox img{padding: 0 23%;}
+  .paymentScanBox .imgBox p{font-size:1.6rem;color:#333333;font-weight: bold;}
+
+  .meFeastBox{margin-top:30px;text-align: right;}
+  .meFeastBox img{width:30%;height:auto;}
+  .currentInforBox{padding:10px 0;
+    .title{font-size:1.6rem;font-weight: bold;padding-left:20px;height:50px;line-height: 50px;border-bottom: 1px solid #f1f1f1;margin-bottom: 0px;}
+    @media screen and (max-width: 320px) {
+      .title{padding-left:10px;}
+    }
+  }
+
+  .newsInforLists{
+    .inforBox{padding:15px 20px;border-bottom: 1px solid #f1f1f1;
+      img{width:30px;height:26px;margin-right: 10px;}
+      .detailInfor{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;
+        .titleBox{font-size:1.4rem;}
+        .titleBox1{color:#4582c9;}
+        .titleBox2{color:#ff6060;}
+        p{margin:5px 0 0;color:#272727;font-size: 1.4rem;}
+      }
+    }
+    .inforBox:last-child{border-bottom: 0 none;}
+    @media screen and (max-width: 320px) {
+      .inforBox{padding:15px 10px;}
+    }
+  }
+
+  /*B端新增*/
+  .storePaymentCodeBox{height:48px;line-height:48px;padding:0 20px 0 10px;font-size:1.5rem;color:#fff;display: inline-block;border-top-right-radius: 24px;border-bottom-right-radius: 24px;
+    background: -webkit-linear-gradient(left, #4582c9 , #73b2fa); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #4582c9, #73b2fa); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #4582c9, #73b2fa); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #4582c9 , #73b2fa); /* 标准的语法 */
+  }
+  .ion-ios-store-paycode{vertical-align: middle;margin-right: 12px;}
+  .ion-ios-store-paycode:before{content:'';width:20px;height:20px;background: url(../assets/imgs/home/payCode.png) no-repeat;background-size:100% 100%;}
+}

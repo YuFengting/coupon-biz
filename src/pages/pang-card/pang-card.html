@@ -1,0 +1,38 @@
+<!--
+  Generated template for the PangCardPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>库胖卡管理</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div class="pangeCardHeader displayFlex-center">
+  <span class="cardHeaderLists" tappable (click)="showAllSortLists()">综合排序 <ion-icon [(name)]="sortArrow"></ion-icon></span>
+  <span class="cardHeaderLists" tappable (click)="goPangCardSearch()">搜索</span>
+  <span class="cardHeaderLists"><ion-icon name="ios-calendar"></ion-icon><ion-datetime (ionChange)="getDate()" displayFormat="YYYY-MM-DD" [(ngModel)]="event.timeStarts" doneText="确定" cancelText="取消"></ion-datetime></span>
+</div>
+<div class="pangCardLists">
+  <div class="cardListBox" *ngFor="let item of pangCardLists" (click)="goCardInfor()">
+    <div class="cardInfor">
+      <span class="name ellipsis1">{{item.name}}</span><span class="phoneNumber ellipsis1">{{item.phoneNumber}}</span><span class="balance ellipsis1">余额：{{item.balance}}元</span>
+    </div>
+    <div class="activedCardDate"><span>开卡日期：</span>{{item.activedCardDate}}</div>
+  </div>
+</div>
+</ion-content>
+<div class="showAllSortBox" *ngIf="showCardSort" (click)="hideCardSort()">
+  <div class="cardSortTypeBox">
+    <div class="sortLists" [class.sortType]="sortType == 1" tappable (click)="selectCardSort(1)">综合排序</div>
+    <div class="sortLists" [class.sortType]="sortType == 2" tappable (click)="selectCardSort(2)">开卡时间</div>
+    <div class="sortLists" [class.sortType]="sortType == 3" tappable (click)="selectCardSort(3)">余额最大</div>
+    <div class="sortLists" [class.sortType]="sortType == 4" tappable (click)="selectCardSort(4)">余额最小</div>
+  </div>
+</div>

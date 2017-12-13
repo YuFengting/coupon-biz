@@ -1,0 +1,29 @@
+<!--
+  Generated template for the BillPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>账单</ion-title>
+    <ion-buttons end>
+    <button ion-button tappable (click)="goLoginPage()" >登录</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div class="billHeaderBox" id="billHeaderBox"><span class="allAssortment" [class.actived]="currentBox" tappable (click)="showAllClassify()">全部分类 <ion-icon [(name)]="sortArrow"></ion-icon></span></div>
+<div class="billListsBox" *ngFor="let item of billLists">
+  <div class="billItemWrap displayFlex-between"><span class="billType">{{item.billType}}</span><span class="billMoney">{{item.billMoney}}</span><span class="billDate">{{item.billDate}}</span></div>
+</div>
+</ion-content>
+<div class="showAllAssortmentBox" *ngIf="showAllClassifyMask" tappable (click)="hideAllClassifyBox()">
+  <div class="allAssortmentLists">
+    <span [class.current]="currentFlag == 1" tappable (click)="clickClassify(1,$event)">全部分类</span><span [class.current]="currentFlag == 2" tappable (click)="clickClassify(2,$event)">总充值</span><span [class.current]="currentFlag == 3" tappable (click)="clickClassify(3,$event)">本店收本店</span><span [class.current]="currentFlag == 4" tappable (click)="clickClassify(4,$event)">本店收他店</span><span [class.current]="currentFlag == 5" tappable (click)="clickClassify(5,$event)">他店收本店</span>
+  </div>
+</div>

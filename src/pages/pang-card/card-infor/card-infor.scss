@@ -1,0 +1,12 @@
+page-card-infor {
+  .pangCardListsBox{border-top:1px solid #dedede;border-bottom:1px solid #dedede;padding-left:30px;
+    &:nth-of-type(3){border-bottom:0 none;
+      .cardLists:last-child{border-bottom:1px solid #dedede;}
+    }
+    .cardLists{border-bottom:1px solid #dedede;height:60px;line-height:60px;font-size:1.7rem;padding-right:15px;
+      &:last-child{border-bottom: 0 none;}
+      label{color:#888888;margin-right: 20px;}
+      .relatedInfor{text-align: right;flex:1;-webkit-flex: 1;}
+    }
+  }
+}

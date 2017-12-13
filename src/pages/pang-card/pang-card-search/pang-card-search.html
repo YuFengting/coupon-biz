@@ -1,0 +1,34 @@
+<!--
+  Generated template for the SettleAccountSearchPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-searchbar placeholder="请输入完整的(或前几位)手机号码" ></ion-searchbar>
+    <ion-buttons end>
+      <button ion-button tappable (click)="searchStoreName()" >搜索</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="hasSearchContentBox" *ngIf="searchContent">
+    <div class="pangCardLists">
+      <div class="cardListBox" *ngFor="let item of pangCardLists" (click)="goCardInfor()">
+        <div class="cardInfor">
+          <span class="name ellipsis1">{{item.name}}</span><span class="phoneNumber ellipsis1">{{item.phoneNumber}}</span><span class="balance ellipsis1">余额：{{item.balance}}元</span>
+        </div>
+        <div class="activedCardDate"><span>开卡日期：</span>{{item.activedCardDate}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="noSearchContentBox" *ngIf="!searchContent">
+    <img src="assets/imgs/settleAccounts/noContenySearch.png" />
+    <p class="noSearchTips">木有搜索到您要找的卡呀～～</p>
+  </div>
+</ion-content>

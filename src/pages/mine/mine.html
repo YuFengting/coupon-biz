@@ -1,0 +1,36 @@
+<!--
+  Generated template for the MinePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>我的</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list class="accountList">
+    <button ion-item tappable (click)="goMyShops()">
+      <ion-icon name="ios-myshop" class="saleKey gotoIcon"></ion-icon>我的店<ion-icon name="ios-identification"></ion-icon>
+    </button>
+
+    <button ion-item tappable (click)="goMyMsg()">
+      <ion-icon name="ios-mymsg" class="requestColor gotoIcon"></ion-icon>我的消息
+    </button>
+
+
+    <button ion-item tappable (click)="goMyHelp()">
+      <ion-icon name="ios-myhelp" class="helpColor gotoIcon"></ion-icon>我的帮助
+    </button>
+
+
+    <button ion-item tappable (click)="goSetting()">
+      <ion-icon name="ios-setting" class="AboutColor gotoIcon"></ion-icon>设置
+    </button>
+  </ion-list>
+</ion-content>

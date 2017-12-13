@@ -1,0 +1,22 @@
+page-bill {
+  .billHeaderBox{padding: 10px 0px; height: 48px;font-size:1.6rem;color:#666666;
+    .allAssortment{padding:0 15px;
+      &.actived{color:#588ac9;}
+    }
+    ion-icon{vertical-align: middle;margin-left: 5px;}
+  }
+  .billListsBox{padding-left:15px;
+    .billItemWrap{height:50px;line-height: 50px;border-bottom:1px solid #dfdede;color:#000000;font-size: 1.4rem;padding-right:5px;
+      .billType{width:40%;}
+      .billMoney{width:30%;}
+      .billDate{color:#888888;width: 30%;}
+    }
+  }
+  .showAllAssortmentBox{width:100%;height: 100%;position: fixed;left:0px;top:112px;background: rgba(0,0,0,0.5);z-index:99;}
+  .allAssortmentLists{background: #fff;padding:0 0 30px 0;
+    span{width: 27%;margin: 0 3%;display: inline-block;height: 32px;line-height: 30px;text-align: center;color: #666666;border: 1px solid #dfdede;border-radius: 6px;margin-bottom: 15px;font-size: 1.6rem;
+      &.current{color:#588ac9;background: #e3ebf5;border:1px solid #588ac9;}
+    }
+  }
+}
+.platform-android .showAllAssortmentBox{top:92px;}

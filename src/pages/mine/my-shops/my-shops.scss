@@ -1,0 +1,33 @@
+page-my-shops {
+  .list-wrapper{border-top:1px solid #dfdede;border-bottom: 1px solid #dfdede;margin-top:8px;
+    .list-item{
+      .inputBox{text-align: right;}
+      .centerContent{text-align: center;display: block;line-height: 60px;
+        ion-icon{color:#a3a4a4;vertical-align: middle;margin-left: 20px;font-size:1.5em;}
+      }
+      &.borderBotNone{border-bottom: 0 none;}
+    }
+  }
+  .myShopsBtnBox{background: #fff;margin-top:8px;padding:40px 15px;
+    button{margin:8px 0;}
+  }
+  .showAccountsInforBox{padding:0px 25px 20px;background: #fff;
+    .accountHeader{color:#4b4b4b;font-size: 1.6rem;
+      &.setMarginTop{margin-top: 20px;}
+    }
+    .inputAccountInfor{padding:0 20px 0 40px;
+      .accountList{height:50px;line-height: 49px;border-bottom: 1px solid #cccccc;
+        label{margin-right: 10px;font-size: 1.6rem;}
+        input{border:0 none;height:49px;padding:10px 5px;line-height: 29px;font-size: 1.6rem;flex:1;-webkit-flex: 1;}
+      }
+    }
+  }
+  .uploadPicWrapper{background: #fff;padding:0 15px 30px 15px;width:100%;overflow: hidden;;
+    .uploadPicBox{background: #efeff4;margin:0 10px;width:35% !important;padding-bottom: 35%;position: relative;
+      .addPicBtn{position: absolute;width:100%;height: 100%;left:0px;top:0px;text-align: center;font-size: 1.4rem;color:#4b4b4b;padding:35px 0 20px 0;
+        ion-icon{font-size:2.8em;color:#588ac9;}
+      }
+      .uploadImgBox{position: absolute;width:100%;height: 100%;left:0px;top:0px;}
+    }
+  }
+}

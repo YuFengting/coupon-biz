@@ -1,0 +1,19 @@
+.accountList{
+  .item-block{min-height: 5.2rem;}
+  .item-ios{padding-left:0px;}
+  .item-inner{padding-left: 22px;}
+  ion-icon{vertical-align: middle;margin-right:20px;}
+  ion-icon:before{background-size:100% 100%;background-repeat:no-repeat;}
+  .ion-ios-myshop:before{content:'';width:28px;height:26px;background-image: url(../assets/imgs/mine/myShopIcon.png);}
+  .ion-ios-mymsg:before{content:'';width:28px;height:27px;background-image: url(../assets/imgs/mine/myMsgIcon.png);}
+  .ion-ios-myhelp:before{content:'';width:28px;height:34px;background-image: url(../assets/imgs/mine/myHelpIcon.png);}
+  .ion-ios-setting:before{content:'';width:28px;height:27px;background-image: url(../assets/imgs/mine/settingIcon.png);}
+  .ion-ios-identification{margin-left: 10px;}
+  .ion-ios-identification:before{content:'';width:20px;height:20px;background-image: url(../assets/imgs/mine/identificationIcon.png);}
+}
+
+/*我的帮助*/
+.myHelpContent{padding:10px;
+  .setMarginBot{margin-bottom: 30px;}
+  .setMarginTop{margin-top: 30px;}
+}

@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar class="homeToolBar">
+    <!--<ion-title>首页</ion-title>-->
+    <!--<ion-buttons end>-->
+    <!--<button ion-button tappable (click)="goLoginPage()" >登录</button>-->
+    <!--</ion-buttons>-->
+    <div class="homeHeaderBox displayFlex-center">
+      <img src="assets/imgs/home/kupangLogo.png">
+      <!--<img src="assets/img/home/kupangLogo.png"  *ngIf="null == avatarUrl">-->
+      <!--<img src="{{avatarUrl}}" *ngIf="null != avatarUrl" >-->
+      <div class="userInfor">
+        <p class="name">{{nickname}}</p>
+        <p class="phonenumber">{{mobile}}</p>
+      </div>
+    </div>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="homePageContent">
+    <div class="cardPackpageBox">
+      <span class="storePaymentCodeBox" tappable (click)="goBusinessGetMoney()"><ion-icon name="ios-store-paycode"></ion-icon>店家收款二维码</span>
+      <!--<span class="cardBillBox" tappable (click)="goBillBox()">账单</span>-->
+    </div>
+    <div class="paymentScanBox">
+      <div class="imgBox" tappable (click)="goPaymentOrOpenCard()">
+        <img src="assets/imgs/home/openCard-recharge.png">
+        <p>充值/开卡</p>
+      </div>
+      <div class="imgBox" tappable (click)="goMakeCollections()">
+        <img src="assets/imgs/home/businessGetMoney.png">
+        <p>收款</p>
+      </div>
+    </div>
+    <!--<div class="meFeastBox"><img src="assets/imgs/home/feastImg.png" tappable (click)="goMyTreat()"></div>-->
+    <div style="width: 100%;height:5px;background: #f0eff5;"></div>
+    <div class="currentInforBox">
+      <h2 class="title">当前信息</h2>
+      <div class="newsInforLists">
+        <div class="inforBox displayFlex-center">
+          <img src="assets/imgs/home/newsIcon1.png">
+          <div class="detailInfor">
+            <div class="titleBox titleBox1">个人卡讯</div>
+            <p>Besokuse您已成功开卡，500元金额赠送您，激活立马使用。</p>
+          </div>
+        </div>
+        <div class="inforBox displayFlex-center">
+          <img src="assets/imgs/home/newsIcon2.png">
+          <div class="detailInfor">
+            <div class="titleBox titleBox2">商家活动</div>
+            <p>董小姐理发馆假期打折大优惠，对折享受一次洗发欢迎大家的到来。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

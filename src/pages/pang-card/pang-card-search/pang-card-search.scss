@@ -1,0 +1,19 @@
+page-pang-card-search {
+  .pangCardLists{padding: 0 15px;
+    .cardListBox{background:#efeff4;border-top-left-radius: 20px;border-top-right-radius: 20px;margin-top: 10px;padding:20px 10px 5px;
+      .cardInfor{
+        span{display: inline-block;color:#333333;font-size: 1.7rem;
+          &.name{width:22%;}
+          &.phoneNumber{width:38%;}
+          &.balance{width:40%;}
+        }
+        @media screen and (max-width: 320px) {
+          span{font-size: 1.6rem;}
+        }
+      }
+      .activedCardDate{font-size:1.4rem;color:#909091;line-height: 30px;
+        span{margin-right: 20px;}
+      }
+    }
+  }
+}

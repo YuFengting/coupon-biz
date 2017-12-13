@@ -1,0 +1,150 @@
+<!--
+  Generated template for the MyShopsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>店铺消息</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="bgGrey">
+  <div class="list-wrapper">
+    <div class="list-item displayFlex-center">
+      <label>店铺名称</label>
+      <input class="inputBox" type="number" [(ngModel)]="shops.shopname" placeholder="请填写店铺名称" />
+    </div>
+    <div class="list-item displayFlex-center">
+      <label>经营区域</label>
+      <input class="inputBox" [(ngModel)]="shops.bossname" type="number" placeholder="请选择市区" />
+    </div>
+    <div class="list-item displayFlex-center">
+      <label>店铺地址</label>
+      <input class="inputBox" type="number" [(ngModel)]="shops.shopaddress" placeholder="请填写店铺地址" />
+    </div>
+  </div>
+  <div class="list-wrapper">
+    <div class="list-item displayFlex-center">
+      <label>店主</label>
+      <input class="inputBox" type="number" [(ngModel)]="shops.shopname" placeholder="请填写负责人姓名" />
+    </div>
+    <div class="list-item displayFlex-center">
+      <label>手机号</label>
+      <input class="inputBox" [(ngModel)]="shops.bossname" type="number" placeholder="请填写责任人手机号" />
+    </div>
+  </div>
+  <div class="list-wrapper">
+    <div class="list-item borderBotNone">
+      <span class="centerContent"  tappable (click)="showAccountInfor()">收款账号<ion-icon [(name)]="setArrowStyle1"></ion-icon></span>
+    </div>
+    <div class="showAccountsInforBox" *ngIf="showAccountsInforFlag">
+      <div class="accountHeader">支付宝【成为认证商家必填】</div>
+      <div class="inputAccountInfor">
+        <div class="accountList displayFlex-center"><label>账号</label><input type="text" [(ngModel)]="alipay.accountNum" /></div>
+        <div class="accountList displayFlex-center"><label>姓名</label><input type="text" [(ngModel)]="alipay.accountName" /></div>
+      </div>
+      <div class="accountHeader setMarginTop">微信支付</div>
+      <div class="inputAccountInfor">
+        <div class="accountList displayFlex-center"><label>账号</label><input type="text" [(ngModel)]="weixinpay.accountNum" /></div>
+        <div class="accountList displayFlex-center"><label>姓名</label><input type="text" [(ngModel)]="weixinpay.accountName" /></div>
+      </div>
+    </div>
+  </div>
+  <div class="list-wrapper">
+    <div class="list-item borderBotNone">
+      <span class="centerContent" tappable (click)="showShopsCertificate()">商铺证件<ion-icon [(name)]="setArrowStyle2"></ion-icon></span>
+    </div>
+    <div class="uploadPicWrapper" *ngIf="showCertificateFlag">
+      <ion-slides>
+        <ion-slide class="uploadPicBox">
+          <div class="addPicBtn" *ngIf="hasImgBox.length == 0" tappable (click)="selectUploadImg()">
+            <ion-icon name="ios-add-circle"></ion-icon><br/>
+            <span>点击添加证件</span>
+          </div>
+          <img class="uploadImgBox" *ngIf="hasImgBox.length > 0" [(src)]="hasImgBox">
+        </ion-slide>
+        <ion-slide class="uploadPicBox">
+          <div class="addPicBtn" *ngIf="hasImgBox.length == 0" tappable (click)="selectUploadImg()">
+            <ion-icon name="ios-add-circle"></ion-icon><br/>
+            <span>点击添加证件</span>
+          </div>
+          <img class="uploadImgBox" *ngIf="hasImgBox.length > 0" [(src)]="hasImgBox">
+        </ion-slide>
+        <ion-slide class="uploadPicBox">
+          <div class="addPicBtn" *ngIf="hasImgBox.length == 0" tappable (click)="selectUploadImg()">
+            <ion-icon name="ios-add-circle"></ion-icon><br/>
+            <span>点击添加证件</span>
+          </div>
+          <img class="uploadImgBox" *ngIf="hasImgBox.length > 0" [(src)]="hasImgBox">
+        </ion-slide>
+        <ion-slide class="uploadPicBox">
+          <div class="addPicBtn" *ngIf="hasImgBox.length == 0" tappable (click)="selectUploadImg()">
+            <ion-icon name="ios-add-circle"></ion-icon><br/>
+            <span>点击添加证件</span>
+          </div>
+          <img class="uploadImgBox" *ngIf="hasImgBox.length > 0" [(src)]="hasImgBox">
+        </ion-slide>
+        <ion-slide class="uploadPicBox">
+          <div class="addPicBtn" *ngIf="hasImgBox.length == 0" tappable (click)="selectUploadImg()">
+            <ion-icon name="ios-add-circle"></ion-icon><br/>
+            <span>点击添加证件</span>
+          </div>
+          <img class="uploadImgBox" *ngIf="hasImgBox.length > 0" [(src)]="hasImgBox">
+        </ion-slide>
+      </ion-slides>
+    </div>
+  </div>
+  <div class="list-wrapper">
+    <div class="list-item borderBotNone">
+      <span class="centerContent" tappable (click)="showShopsPics()">商铺照片<ion-icon [(name)]="setArrowStyle3"></ion-icon></span>
+    </div>
+    <div class="uploadPicWrapper" *ngIf="showShopsPicsFlag">
+      <ion-slides>
+        <ion-slide class="uploadPicBox">
+          <div class="addPicBtn" *ngIf="hasImgBox.length == 0" tappable (click)="selectUploadImg()">
+            <ion-icon name="ios-add-circle"></ion-icon><br/>
+            <span>点击添加照片</span>
+          </div>
+          <img class="uploadImgBox" *ngIf="hasImgBox.length > 0" [(src)]="hasImgBox">
+        </ion-slide>
+        <ion-slide class="uploadPicBox">
+          <div class="addPicBtn" *ngIf="hasImgBox.length == 0" tappable (click)="selectUploadImg()">
+            <ion-icon name="ios-add-circle"></ion-icon><br/>
+            <span>点击添加照片</span>
+          </div>
+          <img class="uploadImgBox" *ngIf="hasImgBox.length > 0" [(src)]="hasImgBox">
+        </ion-slide>
+        <ion-slide class="uploadPicBox">
+          <div class="addPicBtn" *ngIf="hasImgBox.length == 0" tappable (click)="selectUploadImg()">
+            <ion-icon name="ios-add-circle"></ion-icon><br/>
+            <span>点击添加照片</span>
+          </div>
+          <img class="uploadImgBox" *ngIf="hasImgBox.length > 0" [(src)]="hasImgBox">
+        </ion-slide>
+        <ion-slide class="uploadPicBox">
+          <div class="addPicBtn" *ngIf="hasImgBox.length == 0" tappable (click)="selectUploadImg()">
+            <ion-icon name="ios-add-circle"></ion-icon><br/>
+            <span>点击添加照片</span>
+          </div>
+          <img class="uploadImgBox" *ngIf="hasImgBox.length > 0" [(src)]="hasImgBox">
+        </ion-slide>
+        <ion-slide class="uploadPicBox">
+          <div class="addPicBtn" *ngIf="hasImgBox.length == 0" tappable (click)="selectUploadImg()">
+            <ion-icon name="ios-add-circle"></ion-icon><br/>
+            <span>点击添加照片</span>
+          </div>
+          <img class="uploadImgBox" *ngIf="hasImgBox.length > 0" [(src)]="hasImgBox">
+        </ion-slide>
+      </ion-slides>
+    </div>
+  </div>
+  <div class="myShopsBtnBox">
+    <button ion-button full  class="commonSureBtn"  tappable>保存商铺信息</button>
+    <button ion-button full  class="commonSureBtn redbg"  tappable>申请成为认证商铺</button>
+  </div>
+</ion-content>

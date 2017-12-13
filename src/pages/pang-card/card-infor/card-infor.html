@@ -1,0 +1,46 @@
+<!--
+  Generated template for the CardInforPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>卡信息</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div class="pangCardListsBox">
+  <div class="cardLists displayFlex-center">
+    <label>库胖卡号</label>
+    <div class="relatedInfor">{{cardInfor.cardId}}</div>
+  </div>
+  <div class="cardLists displayFlex-center">
+    <label>开卡日期</label>
+    <div class="relatedInfor">{{cardInfor.activedCardDate}}</div>
+  </div>
+  <div class="cardLists displayFlex-center">
+    <label>所在城市</label>
+    <div class="relatedInfor">{{cardInfor.cardCity}}</div>
+  </div>
+</div>
+<div style="width:100%;height:10px;background: #efeff4;"></div>
+  <div class="pangCardListsBox">
+    <div class="cardLists displayFlex-center">
+      <label>卡主姓名</label>
+      <div class="relatedInfor">{{cardInfor.cardName}}</div>
+    </div>
+    <div class="cardLists displayFlex-center">
+      <label>手机号码</label>
+      <div class="relatedInfor">{{cardInfor.phoneNumber}}</div>
+    </div>
+    <div class="cardLists displayFlex-center">
+      <label>卡内余额</label>
+      <div class="relatedInfor">¥ {{cardInfor.cardMoney}}</div>
+    </div>
+  </div>
+</ion-content>

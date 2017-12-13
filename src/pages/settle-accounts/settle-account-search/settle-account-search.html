@@ -1,0 +1,40 @@
+<!--
+  Generated template for the SettleAccountSearchPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-searchbar placeholder="请输入您要搜索的店铺名称" ></ion-searchbar>
+    <ion-buttons end>
+    <button ion-button tappable (click)="searchStoreName()" >搜索</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="bgGrey">
+<div class="hasSearchContentBox" *ngIf="searchContent">
+  <div class="detailInforLists">
+    <div class="inforItemBox">
+      <div class="businessInfor displayFlex-center">
+        <span class="checkboxWrapper ellipsis1">董小姐美容美发理发馆董小姐美容美发理发馆</span>
+      </div>
+      <div class="dateBalanceBox displayFlex-between"><span class="dateBox">12-04 10:30</span><span class="balanceBox">¥ 800</span></div>
+    </div>
+  </div>
+  <div class="sureBtnBox">
+    <button ion-button full  class="commonSureBtn">已付，请求确认</button>
+    <!--<button ion-button full  class="commonSureBtn">请付欠我款项</button>-->
+    <!--<button ion-button full  class="commonSureBtn">确认，款项已收</button>-->
+  </div>
+</div>
+<div class="noSearchContentBox" *ngIf="!searchContent">
+    <img src="assets/imgs/settleAccounts/noContenySearch.png" />
+    <p class="noSearchTips">木有搜索到您要找的店铺名称哦～～</p>
+    <p class="backToPrevPage" (click)="goPrevPage()">返回到店铺详情</p>
+</div>
+</ion-content>

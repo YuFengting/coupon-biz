@@ -1,0 +1,15 @@
+page-scan-payment {
+  .sanPaymentBox{width:80%;position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);border-radius: 8px;background: #fff;overflow: hidden;font-size:1.7rem;color:#131212;
+    .cardInforBox{background:#eaf2fd;padding:10px 25px;line-height: 35px;border-top-right-radius: 8px;border-top-left-radius: 8px;}
+    .payNumberBox{padding:30px 20px;}
+    .consumeNumber{text-align: center;
+      input{width:50%;border:1px solid #bdbcbc;padding:5px 8px;height:40px;line-height:30px;margin:0 10px;}
+    }
+    .consumeBtnBox{margin-top: 30px;
+      button{margin:0 10px;flex: 1;-webkit-flex:1;}
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .sanPaymentBox{width:90%;}
+  }
+}

@@ -1,0 +1,28 @@
+.loginWrapBox{width:100%;background: #fff;height:100%;position: relative;padding:5px 35px;
+  .kupangLogo{width: 35%;margin: 60px auto 30px;display: block;}
+}
+.loginListBox{
+  height:60px;padding:10px 20px;line-height: 40px;border-bottom:1px solid #ccc;display: -webkit-box;display: -webkit-flex;display: flex;-webkit-box-align: center;-webkit-align-items: center;align-items: center;
+  .loginInput{
+    -webkit-box-flex: 1;-webkit-flex: 1;flex: 1;border:0 none;width:50px; font-size: 1.6rem;
+  }
+  .labelItem{
+    margin-right:10px;color:#050505;
+  }
+  .getCodeBox{
+    color:#fff;padding:0 10px;height:35px;line-height:35px;text-align: center;background: #e5e5e5;margin-left: 10px;border-radius: 3px;
+  }
+  .getCodeBox.codeStyleBtn{background: #588ac9;}
+  .countTime{width:80px;text-align: right;display: inline-block;color:#d1d2d2;}
+  ion-icon{font-size:1.6em;color:#919191;padding: 10px;}
+
+}
+.loginTipsBox{margin-top:50px;padding:0px;color:#535455;
+  .agreementBox{color:#6B96C8;}
+}
+.submitbtnBox{padding: 0 20px;margin-top: 40px;
+  button{background: #e5e5e5;border-radius: 25px;height:50px;line-height:50px;}
+  button.loginSubmitBtn{background: #588ac9;}
+  //.button-ios.activated{background:#4a8acd; }
+  //.button-md.activated{background:#4a8acd; }
+}

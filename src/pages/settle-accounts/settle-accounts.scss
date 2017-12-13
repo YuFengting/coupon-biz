@@ -1,0 +1,22 @@
+page-settle-accounts {
+  .settleAccountsContent{}
+  .settleAccountsTitle{border-bottom: 1px dashed #585858;width:80%;height:0px;margin:40px auto 60px ;position: relative;
+    span{background: #fff;padding: 0 12px;position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);white-space: nowrap;color:#333333;font-size:1.6rem;}
+    &:nth-of-type(3){margin-top:60px;}
+  }
+  @media screen and (max-width: 320px) {
+    .settleAccountsTitle{width:90%;}
+  }
+  .settleAccountsClassify{text-align: center;
+    .classifyInforBox{position: relative;font-size:1.7rem;line-height: 28px;display: inline-block;margin:0 10%;
+      img{width:100px;height:auto;}
+      .confirmedImg{width: 75px;}
+      .classifyName{color:#333333;font-weight: bold;}
+      .paymentMoney{color:#588ac9;}
+      .tipsMsgBox{background: #f12816;height: 22px;line-height: 22px;border-radius: 9px;padding: 0 12px;position: absolute;right: -10px;top: -13px;color: #fff;font-weight: normal;font-size: 1.5rem;}
+    }
+    @media screen and (max-width: 320px) {
+      .classifyInforBox{margin:0 9%;}
+    }
+  }
+}
